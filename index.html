@@ -319,8 +319,91 @@
         </footer>
         <div data-modal class="is-hidden">
             <div data-modal-content>
-                <div> text pentru test in modal</div>
-                <button data-modal-close type="button">X</button>
+                <form name="user-information" class="index__user-information">
+                    
+                    <div style="font-size: 20px; align-self: center; margin-top: 30px;"> 
+                        Leave your information and we'll call you back
+                    </div>
+                    <div class="index__user-information__input-module">
+                        <div>
+                            <label for="text">Name:</label>
+                        </div>                    
+                        <div class="index__user-information__input-block">
+                            <svg height="32px" width="32px">
+                                <use href="./images/icons.svg#person" />
+                            </svg>
+                            <input class="index__user-information__input-text" type="text" name="name" id="name"  required />
+                        </div>
+                    </div>
+                    <div class="index__user-information__input-module">
+                        <div>
+                            <label for="phone">Telephone:</label>
+                        </div>                    
+                        <div class="index__user-information__input-block">
+                            <svg height="32px" width="32px">
+                                <use href="./images/icons.svg#phone_receiver" />
+                            </svg>
+                            <input class="index__user-information__input-text" type="tel" name="phone" id="phone" required />
+                        </div>
+                    </div>
+                    <div class="index__user-information__input-module">
+                        <div>
+                            <label for="email">E-mail:</label>
+                        </div>
+                        <div class="index__user-information__input-block">
+                            <svg height="32px" width="32px">
+                                <use href="./images/icons.svg#email_black" />
+                            </svg>
+                            <input class="index__user-information__input-text" type="tel" name="phone" id="phone" required />
+                        </div>
+                    </div>
+                    <div class="index__user-information__comments-module">
+                        <div>
+                            <label for="comments">Comments:</label>
+                        </div>
+                        <div class="index__user-information__input-block">
+                            <textarea class="index__user-information__comments-text" rows="4" name="comments" id="comments"></textarea>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <label class="modal-form__position modal-form__checked">
+                        <input type="checkbox" name="agree" value="agree" class="modal-form__input"/>
+                        <span class="replace-checkbox modal-checkbox__position">
+                           <svg>
+                                <use href="./images/icons.svg#checkbox_open"></use>
+                            </svg>
+                        </span>
+                        I agree with the letter and accept the
+                        <a href="#" class="condition">Terms and Conditions</a>
+                    </label>
+
+
+
+
+
+                    <!-- <div class="index__user-information__input-module" style="flex-direction: row;">
+                        <div>
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="agree" value="agree" class="modal-form__input"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="main__button" style="width: 200px; height: 50px; align-self: center; margin-top: 20px;">Send</button> -->
+                </form>
+
+
+
+
+                <button data-modal-close type="button" style="align-self: center;">X</button>
             </div>
         </div>
         <script src="./js/modal.js"></script>
